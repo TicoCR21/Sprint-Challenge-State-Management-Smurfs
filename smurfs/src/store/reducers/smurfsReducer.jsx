@@ -1,5 +1,6 @@
 import { FETCH_SMURFS, FETCHING_SMURFS, FETCH_ERROR } from "../actions/smurfsFetchActions";
 import { SENDING_SMURF, SEND_SMURF_SUCCESS, SEND_ERROR } from "../actions/smurfSendActions";
+import { REMOVE_SMURF } from "../actions/smurfRemoveActions";
 
 const initialState = { 
                         smurfs : [], 
@@ -22,6 +23,8 @@ export const smurfsReducer = ( state = initialState, action ) =>
     case SENDING_SMURF:
       return { smurfs : [ ...state.smurfs ], fetchLoading : false, fetchError : false, fetch : false };
     case SEND_SMURF_SUCCESS:
+      return { smurfs : [], fetchLoading : false, fetchError : false, fetch : true };
+    case REMOVE_SMURF:
       return { smurfs : [], fetchLoading : false, fetchError : false, fetch : true };
     case SEND_ERROR:
     default:

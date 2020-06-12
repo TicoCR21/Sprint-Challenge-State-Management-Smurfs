@@ -57,4 +57,12 @@ body
 .formContainer input
 {
   display: block;
+  width : 300px;
+  font-size: 20px;
+}
+
+button
+{
+  width : 310px;
+  font-size: 20px;
 }
