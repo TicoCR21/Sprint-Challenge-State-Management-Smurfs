@@ -1,3 +1,60 @@
-.App {
+body
+{
+  color : whitesmoke;
+  background : lightskyblue;
+}
+
+.container
+{
+  width : 85%;
+  margin : 0 auto;
+}
+
+.smurfsVillageTitle
+{
   text-align: center;
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+.smurfsVillargers
+{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.gifContainer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gifContainer img
+{
+  display: inline-block;
+  width: 800px;
+  height: 600px;
+}
+
+.gifMessage
+{
+  font-size: 40px;
+}
+
+.villagers ul
+{
+  list-style-type: none;
+}
+
+.villagers li
+{
+  font-size: 25px;
+  display: inline;
+  margin: 10px 15px;
+}
+
+.formContainer input
+{
+  display: block;
 }
